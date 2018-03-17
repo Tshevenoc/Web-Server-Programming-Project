@@ -1,0 +1,30 @@
+body
+{
+	background-color: #EAFAEA;
+	margin: 0px;
+	padding: 0px;
+}
+#heading
+{
+	text-align: center;
+	background-color: #4D7F97;
+	/*border-bottom: 5px solid #333366;*/
+	display: inline-block;
+    width: 100%;
+	
+}
+#side-list
+{
+	background-color: #BADEEF;
+	border: 5px solid #333366;
+	margin: 5px;
+	padding: 5px;
+	width: 150px;
+	border-radius: 25px;
+	float:left;
+}
+#main
+{
+	text-align: center;
+	float:center;
+}
