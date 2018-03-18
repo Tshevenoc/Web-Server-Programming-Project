@@ -1,42 +1,83 @@
-<html>
+<!doctype html>
+<html lang ="en">
 	<!--
 		This file is reserved for the main page
 	-->
 	<head>
 		<meta charset = "utf-8"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<title>Insert Title</title>
 		<link rel="stylesheet" type="text/css" href="style.css">
+		<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+	    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+	    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+	    <script>
+		    $( function() {
+			    $( "#menu" ).menu();
+		    } );
+	    </script>
+	    <style>
+		  .ui-menu { 
+				background-color: #BADEEF;
+				border: 5px solid #333366;
+				margin: 5px;
+				padding: 0px;
+				width: 150px;
+				border-radius: 25px;
+				float:left;
+				text-align:center;
+		  }
+	    </style>
 	</head>
 	<body>
 		<div id = "heading">
 			<h1>HomePage (Replace with title of website) possibly add login link to heading</h1> 
 		</div>
-		<div id = "side-list">
-			<p style = "text-align:center;font-weight:bold;"> section header </p>
-			<ul>
-				<li>list item</li>
-				<li> will be links</li>
-					<ul>
+		<!-- <div id = "side-list">		 -->
+			<ul id = "menu">
+				<div style = "text-align:center;font-weight:bold;"> Html </div>
+				<li>item</li>
+				<li> item
+					<ul style = 'border-radius:0px;'>
+						<li>sub item</li>
+						<li>sub item</li>
+						<li>sub item</li>
 						<li>sub item</li>
 					</ul>
-				<li> will need</li>
-				<li> to make collaspable</li>
-				<li> this will be a stand in</li>
-				<li>list</li>
-			</ul>
-			<p style = "text-align:center;font-weight:bold;"> section header </p>
-			<ul>
-				<li>list item</li>
-				<li> will be links</li>
-					<ul>
+				</li>
+				<li> item</li>
+				<li> item</li>
+				<li> item</li>
+				<li>item</li>
+			
+				<div style = "text-align:center;font-weight:bold;"> Javascript </div>
+			
+				<li>item</li>
+				<li> item
+					<ul style = 'border-radius:0px;'>
 						<li>sub item</li>
 					</ul>
-				<li> will need</li>
-				<li> to make collaspable</li>
-				<li> this will be a stand in</li>
-				<li>list</li>
-			</ul>
-		</div>
+				</li>
+				<li>item</li>
+				<li> item</li>
+				<li> item</li>
+				<li>item</li>
+				
+				<div style = "text-align:center;font-weight:bold;"> CSS </div>
+			
+				<li>item</li>
+				<li> item
+					<ul style = 'border-radius:0px;'>
+						<li>sub item</li>
+					</ul>
+				</li>
+				<li>item</li>
+				<li> item</li>
+				<li> item</li>
+				<li>item</li>
+				<br/>
+			</ul>			
+		<!-- </div> -->
 		<div id = "main">
 			<h3>Welcome</h3>
 			<h4>Insert generic welcome message</h4>
