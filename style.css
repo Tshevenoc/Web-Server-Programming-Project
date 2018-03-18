@@ -1,6 +1,6 @@
 body
 {
-	background-color: #EAFAEA;
+	background-color: #e6e9ed;
 	margin: 0px;
 	padding: 0px;
 }
@@ -13,18 +13,28 @@ body
     width: 100%;
 	
 }
-#side-list
+/* #side-list
 {
-	background-color: #BADEEF;
+	background-color: #b2d3ff;
 	border: 5px solid #333366;
 	margin: 5px;
 	padding: 5px;
 	width: 150px;
 	border-radius: 25px;
 	float:left;
-}
+} */
 #main
 {
 	text-align: center;
 	float:center;
+}
+ul {
+  list-style-type: none;
+  float:left;
+}
+li{
+	border-bottom:1px solid #333366;
+	border-top:1px solid #333366;
+	background-color:#cce0fc;
+	width:150px;
 }
