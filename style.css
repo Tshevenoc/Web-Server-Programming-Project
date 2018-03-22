@@ -1,40 +1,107 @@
 body
 {
 	background-color: #e6e9ed;
-	margin: 0px;
-	padding: 0px;
+	margin: auto;
 }
-#heading
-{
-	text-align: center;
-	background-color: #4D7F97;
-	/*border-bottom: 5px solid #333366;*/
-	display: inline-block;
+
+header {
+    text-align: center;
+    background-color: #4D7F97;
+    padding-top: 40px;
+    padding-bottom: 40px;
     width: 100%;
-	
 }
-/* #side-list
-{
-	background-color: #b2d3ff;
-	border: 5px solid #333366;
-	margin: 5px;
-	padding: 5px;
-	width: 150px;
-	border-radius: 25px;
-	float:left;
-} */
-#main
-{
-	text-align: center;
-	float:center;
+ 
+.Maintext1 a{
+    text-decoration: none;
 }
-ul {
-  list-style-type: none;
-  float:left;
+
+.menu {
+    background-color: #BADEEF;
+    border: 5px solid #333366;
+    border-radius: 25px;
+    width:25%;
+    padding-left:5px;
+    
 }
-li{
-	border-bottom:1px solid #333366;
-	border-top:1px solid #333366;
-	background-color:#cce0fc;
-	width:150px;
+
+.MainContent {
+    display: flex;
+    max-width: 1500px;
+    border:10px;
+}
+
+.Maintext1{
+
+    height: 570px;
+    float: left;
+    margin-right: auto;
+    margin-left: 100px;
+    margin-top: 30px;
+
+}
+
+.Maintext2 {
+    float:right;
+    text-align:center;
+}
+
+
+.stylingTitleList{
+    font-size:20px;
+    font-weight: bold;
+    margin:auto;
+    padding-bottom: 15px;
+}
+
+.BorderSpace {
+    border: 10px solid black;
+    height: 500px;
+    width: 500px;
+    margin:auto;
+}
+.BorderSpace1 {
+    border: 10px solid black;
+    height: 1850px;
+    width: 1750px;
+    margin: auto;
+}
+
+
+/*Drop down content*/
+.dropdown {
+    position: relative;
+    display: block;
+}
+
+.dropdown-content {
+    display: none;
+    z-index: 1;
+    border-radius: 20px;
+}
+
+.dropdown:hover .dropdown-content {
+    display:inline;
+}
+
+/* The listed element styling*/
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    border-radius: 20px;
+    font-weight: 700;
+}
+
+    .dropdown-content a:hover {
+        background-color: #ddd
+    }
+/*^^^Drop down content^^^*/
+
+
+.group:after {
+    content: "";
+    display: table;
+    clear: both;
 }
