@@ -1,92 +1,143 @@
 <!doctype html>
-<html lang ="en">
+<html lang ="en" xmlns="http://www.w3.org/1999/xhtml">
 	<!--
 		This file is reserved for the main page
 	-->
 	<head>
-		<meta charset = "utf-8"/>
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<title>Insert Title</title>
-		<link rel="stylesheet" type="text/css" href="style.css">
-		<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
-	    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
-	    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-	    <script>
-		    $( function() {
-			    $( "#menu" ).menu();
-		    } );
-	    </script>
-	    <style>
-		  .ui-menu { 
-				background-color: #BADEEF;
-				border: 5px solid #333366;
-				margin: 5px;
-				padding: 0px;
-				width: 150px;
-				border-radius: 25px;
-				float:left;
-				text-align:center;
-		  }
-	    </style>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1,
+          minimum-scale=0.5, maximum-scale=0.5, minimal-ui" />
+
+    <title>EasyFunWeb</title>
+	
+    <link rel="stylesheet" type="text/css" href="normalize.css" />
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+    <!--Inline Javascript-->
+    <script type="text/javascript">
+
+    </script>
 	</head>
 	<body>
-		<div id = "heading">
-			<h1>HomePage (Replace with title of website) possibly add login link to heading</h1> 
+		<div class="topbar">
+			<div class="clearfix">
+				<ul class="navbar ">
+					<li><a href="#">Home</a></li>
+					<!--Dropdown menu within a list of content-->
+					<li class="dropdown">
+						<a href="#">Info</a>
+						<div class="dropdown-content">
+							<a href="#">XX</a>
+							<a href="#">XX</a>
+							<a href="#">XX</a>
+						</div>
+					</li>
+					<li class="dropdown">
+						<a href="#">Info</a>
+						<div class="dropdown-content">
+							<a href="#">XX</a>
+							<a href="#">XX</a>
+							<a href="#">XX</a>
+						</div>
+					</li>
+					<!--Fix-->
+					<li><a href="#contact">Contact</a></li>
+				</ul>
+
+				<form>
+					<div class="login" id="login">
+
+						<!--<label for="username"><b>Username</b></label>-->
+						<input type="text" placeholder="Enter Username" name="username" required>
+
+
+						<!--<label for="password"><b>Password</b></label>-->
+						<input type="password" placeholder="Enter Password" name="password" required>
+						<button type="submit">Login</button>
+						<button type="button">Sign up</button>
+
+					</div>
+				</form>
+			</div>
 		</div>
-		<!-- <div id = "side-list">		 -->
-			<ul id = "menu">
-				<div style = "text-align:center;font-weight:bold;"> Html </div>
-				<li>item</li>
-				<li> item
-					<ul style = 'border-radius:0px;'>
-						<li>sub item</li>
-						<li>sub item</li>
-						<li>sub item</li>
-						<li>sub item</li>
-					</ul>
-				</li>
-				<li> item</li>
-				<li> item</li>
-				<li> item</li>
-				<li>item</li>
-			
-				<div style = "text-align:center;font-weight:bold;"> Javascript </div>
-			
-				<li>item</li>
-				<li> item
-					<ul style = 'border-radius:0px;'>
-						<li>sub item</li>
-					</ul>
-				</li>
-				<li>item</li>
-				<li> item</li>
-				<li> item</li>
-				<li>item</li>
 				
-				<div style = "text-align:center;font-weight:bold;"> CSS </div>
-			
-				<li>item</li>
-				<li> item
-					<ul style = 'border-radius:0px;'>
-						<li>sub item</li>
-					</ul>
-				</li>
-				<li>item</li>
-				<li> item</li>
-				<li> item</li>
-				<li>item</li>
-				<br/>
-			</ul>			
-		<!-- </div> -->
-		<div id = "main">
-			<h3>Welcome</h3>
-			<h4>Insert generic welcome message</h4>
-			<p>
-			Basic explanation of what the site does is placed here. The topics that are talked about and possible</br> a message for the user or guest depending on wether or
-			not they are logged in. <br/><br/><br/>
-			There is plenty of room for improvement on this mock-up but this is to provide a starting point.
-			</p>
-		</div>
+		<header>
+			<h1>Easy Fun Web</h1> 
+		</header>
+		<!-- <div id = "side-list">		 -->
+		<div class="MainContent wrap">
+
+            <div class="HTMLlist">
+            <h2 style="text-align:center;">List</h2>
+            <ul>
+                <li class="dropdown stylingTitleList">
+                    HTML
+
+                    <div class="dropdown-content">
+                        <ol>
+                            <li><a href="intro.html">Intro</a></li>
+                                <li><a href="tags.html">Tags</a></li>
+                                <li><a href="lists.html">Lists</a></li>
+                                <li>
+                                    <a href="#">Media</a>
+                                        <ul>
+                                            <li><a href="video.html">Video</a></li>
+                                            <li><a href="audio.html">Audio</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="links.html">Links</a></li>
+                                    <li>
+                                        <a href="#">Forms</a>
+                                        <ul>
+                                        <li><a href="input.html">Input</a></li>
+										<li><a href="button.html">Button</a></li>
+									</li>
+                                </ul>
+                        </ol>
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+
+
+
+                <div class="gameSection">
+                    <h2>Welcome</h2>
+
+                    <p>
+                       Insert generic welcome message<br/>
+					   Basic explanation of what the site does is placed here. The topics that are talked about and possible<br/>
+					   a message for the user or guest depending on wether or not they are logged in. <br/>
+ 					   There is plenty of room for improvement on this mock-up but this is to provide a starting point.
+                    </p>
+					<div class="BorderSpace">
+                    </div>
+					<p>We could place an intro video here.
+					</p>
+
+                </div>
+				
+				<div class="Maintext1 index">
+                    <h2 style="text-align:center;">Index</h2>
+                    <p>Since this is on the homepage we could remov it(but it'll no longer be uniform with other pages) or we do a basic intro to how to work the site and 
+					and place links for the most common html information.</p>
+					<br/>
+					<a>More terms here</a>
+                </div>
+
+
+            </main>
+
+<!--             <div class="BorderSpace" style=" min-width: 1400px; margin: 30px;">
+
+            </div> -->
+        </div>
+
+    <footer>
+        <!--Tester link-->
+        <p><span>&copy; 2018 EasyFunWeb</span></p><!--Using <small> makes the text small-->
+    </footer>
 	</body>
 
 </html>
