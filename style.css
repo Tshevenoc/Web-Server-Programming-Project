@@ -146,8 +146,14 @@ color: white;
 	color:blue;
 }
 
+.index p {
+	display:block;
+	text-align:left;
+}
 
-
+.index dl{
+	text-align:left;
+}
 
 
 .stylingTitleList{
