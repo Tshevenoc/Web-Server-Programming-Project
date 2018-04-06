@@ -1,0 +1,167 @@
+﻿<!doctype html>
+<html lang ="en" xmlns="http://www.w3.org/1999/xhtml">
+	<!--
+		skeleton for all other pages
+	-->
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1,
+          minimum-scale=0.5, maximum-scale=0.5, minimal-ui" />
+
+    <link rel="stylesheet" type="text/css" href="normalize.css" />
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+    <title>EasyFunWeb</title>
+
+    <!--Inline Javascript-->
+    <script type="text/javascript">
+
+    </script>
+
+</head>
+<body>
+
+    <div class="topbar">
+        <div class="clearfix">
+            <ul class="navbar ">
+                <li><a href="#">Home</a></li>
+                <!--Dropdown menu within a list of content-->
+                <li class="dropdown">
+                    <a href="#">Info</a>
+                    <div class="dropdown-content">
+                        <a href="#">XX</a>
+                        <a href="#">XX</a>
+                        <a href="#">XX</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a href="#">Info</a>
+                    <div class="dropdown-content">
+                        <a href="#">XX</a>
+                        <a href="#">XX</a>
+                        <a href="#">XX</a>
+                    </div>
+                </li>
+                <!--Fix-->
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+
+            <form>
+                <div class="login" id="login">
+
+                    <!--<label for="username"><b>Username</b></label>-->
+                    <input type="text" placeholder="Enter Username" name="username" required>
+
+
+                    <!--<label for="password"><b>Password</b></label>-->
+                    <input type="password" placeholder="Enter Password" name="password" required>
+                    <button type="submit">Login</button>
+                    <button type="button">Sign up</button>
+
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <header>
+
+        <h1>Easy Fun Web</h1>
+    </header>
+
+
+
+    <div class="MainContent wrap">
+
+        <div class="HTMLlist">
+            <h2 style="text-align:center;">List</h2>
+            <ul>
+                <li class="dropdown stylingTitleList">
+                    HTML
+
+                    <div class="dropdown-content">
+                        <ol>
+                            <li><a href="intro.html">Intro</a></li>
+                                <li><a href="tags.html">Tags</a></li>
+                                <li><a href="lists.html">Lists</a></li>
+                                <li>
+                                    <a href="#">Media</a>
+                                        <ul>
+                                            <li><a href="video.html">Video</a></li>
+                                            <li><a href="audio.html">Audio</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="links.html">Links</a></li>
+                                    <li>
+                                        <a href="#">Forms</a>
+                                        <ul>
+                                            <li><a href="input.html">Input</a></li>
+                                            <li><a href="button.html">Button</a></li>
+                                        </ul>
+                                    </li>
+                        </ol>
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+
+
+
+        <div class="gameSection">
+            <h2>Buttons</h2>
+
+            <p>
+                Just as the name implies, the button element will render a clickable button. The type 
+                attribute specifies whether the button should submit the form data, reset the form, or 
+                have no default behavior for use with JavaScript.
+            </p>
+            <div class="BorderSpace">
+            </div>
+
+            <p>
+                The HTML <'button'> element represents a clickable button, which can be used in forms, 
+                or anywhere in a document that needs simple, standard button functionality. By default,
+                HTML buttons are typically presented in a style similar to that of the host platform the
+                user agent is running on, but you can change the appearance of the button using CSS.
+            </p>
+        </div>
+
+        <div class="index">
+            <h2 style="text-align:center;">Index</h2>
+            <h3>Attrubutes</h3>
+            <p>
+                <strong>Type</strong>
+               
+               - <!--Submit--><a style="text-decoration: none;">Submit:</a> The button submits the form data to the server.
+                This is the default if the attribute is not specified,
+                or if the attribute is dynamically changed to an empty or invalid value.
+                <!--Reset--><a style="text-decoration: none;">Reset:</a> The button resets all the controls to their initial values.
+                <!--Button--><a style="text-decoration: none;">Button:</a> The button has no default behavior.
+                It can have client-side scripts associated with the element's events, which are triggered when the events occur.
+
+            </p>
+            <p>
+                <strong>Controls</strong>
+                - If this attribute is present, the browser will offer controls to allow the user to control audio playback,
+                including volume, seeking, and pause/resume playback.
+            </p>
+            <p>
+                <strong>Autofocus</strong>
+               - This Boolean attribute lets you specify that the button should have input focus when the page loads, unless 
+                the user overrides it, for example by typing in a different control. Only one form-associated element in a
+                document can have this attribute specified.
+            </p>
+            <br />
+            <a>More terms here</a>
+        </div>
+
+
+    </div>
+
+    <footer>
+        <!--Tester link-->
+        <p><span>&copy; 2018 EasyFunWeb</span></p><!--Using <small> makes the text small-->
+    </footer>
+
+</body>
+</html>

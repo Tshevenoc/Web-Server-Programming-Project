@@ -12,14 +12,20 @@ body {
 }
 
 header {
-     background: linear-gradient( to top, gainsboro, transparent 20%);
-    text-align: center; 
+    background: linear-gradient( to top, gainsboro, transparent 20%);
     background-color: #4D7F97;
-    padding-top: 60px;
+    padding-top: 80px;
     padding-bottom: 40px;
     width: 100%;
-  
+    text-align: center;
 }
+.main-img {
+    border: solid 4px black;
+    border-radius: 20%;
+    margin-bottom: 10px;
+}
+
+
 footer {
     background: linear-gradient( to bottom, gainsboro, transparent 30%);
     background-color: #4D7F97;
@@ -104,8 +110,7 @@ color: white;
 
 .MainContent {
     display: flex;
-    width: 90%;
-    margin-left: 90px;
+    width: 100%;
 }
 
 .HTMLlist {
@@ -146,14 +151,8 @@ color: white;
 	color:blue;
 }
 
-.index p {
-	display:block;
-	text-align:left;
-}
 
-.index dl{
-	text-align:left;
-}
+
 
 
 .stylingTitleList{
@@ -176,9 +175,78 @@ color: white;
     display: table;
     clear: both;
 }
+.Links {
+    margin: 30px;
+    padding: 20px 40px 40px;
+    text-align: center;
+    width: 70%;
+    background: white;
+    border-bottom: 4px solid #ccc;
+    border-radius: 6px;
+    display: flex;
+}
+
+.card {
+    margin: 30px;
+    padding: 20px 40px 40px;
+    max-width: 500px;
+    text-align: left;
+    background: white;
+    border-bottom: 4px solid #ccc;
+    border-radius: 6px;
+}
+
+    .card:hover {
+        border-color: #ff99ff;
+    }
+
+.flex {
+    display: flex;
+    max-width: 1200px;
+    justify-content: space-around;
+    margin: 0 auto;
+}
 
 
 
+.flex1 {
+    display: flex;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.Fsize{
+    font-size: 20px;
+    
+   
+ }
+
+
+ul .skills {
+   
+    padding: 0;
+    text-align: center;
+}
+
+.skills li {
+    border-radius: 6px;
+    display: inline-block;
+    background: #ff9904;
+    color: white;
+    padding: 5px 10px;
+    margin: 2px;
+}
+
+    .skills li:nth-child(even) {
+        background: #0399ff;
+    }
+    .skills a{
+        text-decoration:none;
+        color:white;
+    }
+    .skills a:hover{
+        color:black;
+
+    }
 /*below is the css for the form data*/
 button{
 	width:100px;
