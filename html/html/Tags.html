@@ -1,7 +1,8 @@
 ﻿<!doctype html>
 <html lang ="en" xmlns="http://www.w3.org/1999/xhtml">
-
-
+	<!--
+		skeleton for all other pages
+	-->
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1,
@@ -19,7 +20,7 @@
 
 </head>
 <body>
-    <!--Top Nav bar-->
+
     <div class="topbar clearfix">
         <ul class="navbar ">
             <li><a href="Index.html">Home</a></li>
@@ -47,12 +48,10 @@
     </header>
 
 
+    <div class="MainContent wrap">
 
-    <main class="MainContent wrap">
-
-        <div class="HTMLlist ">
+        <div class="HTMLlist">
             <h2 style="text-align:center;">List</h2>
-            
             <ul>
                 <li class="dropdown stylingTitleList">
                     HTML
@@ -68,7 +67,7 @@
                                     <li><a href="Audio.html">Audio</a></li>
                                 </ul>
                             </li>
-                            <li><a href="#.html">Anchor</a></li>
+                            <li><a href="Anchor.html">Anchor</a></li>
                             <li>
                                 <a>Forms</a>
                                 <ul>
@@ -76,7 +75,7 @@
                                     <li><a href="Button.html">Button</a></li>
                                 </ul>
                             </li>
- st                        </ol>
+                        </ol>
                     </div>
                 </li>
             </ul>
@@ -85,67 +84,58 @@
 
 
 
+
         <div class="gameSection">
-            <h2>Anchor</h2>
+            <h2>Tags</h2>
 
             <p>
-                Links are a must for navigating between the pages of your website and to other sites as well.
+               Tags are one of the most basic parts for an HTML webpage, and denote how the elements are formatted depending on their tag.
             </p>
             <div class="BorderSpace">
             </div>
 
-            <p>
-                Links are a must for navigating between the pages of your website. To create a link an anchor tag (&#60;a&#62;) is placed around
-				the word that will be the link. In order for a link to work, the target attribute must be present and have the url or local document. Another useful
-				attribute that is used is target. Target specifies where the link is opened and can be '_black' which opens a new window, '_self' which opens the link in the same 
-				window, '_parent' which opens it in a parent frame, '_top' which opens it in the full body of the window, or <i>framename</i> which is the specified name of a 
-				frame on the window and will then have the opened document.
+             <p>
+                The first tags that would be used in a webpage would be the
+                HTML tag, head, and body tag. These three tags set up the basis of each webpage. The head tags hold all linked documents, suach as style sheets and javascript,
+                the title of the webpage, built in style sheets, and other such as these, The body tag contains the main content of the webpage. Other common tags are the header and
+                footer tag, as well as paragraph &#60;p&#62; and div tag. The paragraph tag holds text while the div tag seperates a portion of the screen for itself.
             </p>
         </div>
 
-        
         <div class="index">
             <h2 style="text-align:center;">Index</h2>
-			<h3 style="text-align:center;">Attrubutes</h3>
+            <h3>Attrubutes</h3>
             <br />
-			<p>
-                <strong>&#60;a&#62;</strong>
-               - Anchor tag
+            <p>
+                <strong>&#60;html&#62;</strong>
+                -surrounds the etire document, specifies that the content is HTML
             </p>
-			<p>
-                <strong>href</strong>
-               - The url of the site that the anchor tag points to (may also be a local link)
+            <p>
+                <strong>&#60;head&#62;</strong>
+                -contains metadata
             </p>
-			<p>
-                <strong>target</strong>
-               - specifies where the link will open
+            <p>
+                <strong>&#60;body&#62;</strong>
+                -paragraph tag
             </p>
-			<p>
-                <strong>_blank</strong>
-               - Opens link in a new window
+            <p>
+                <strong>&#60;div&#62;</strong>
+                -div tag
             </p>
-			<p>
-                <strong>_self</strong>
-               - Opens link in the same window
+            <p>
+                <strong>&#60;header&#62;</strong>
+                -contains header information
             </p>
-			<p>
-                <strong>_parent</strong>
-               - Opens link in a parent frame
+            <p>
+                <strong>&#60;footer&#62;</strong>
+                -contains footer information
             </p>
-			<p>
-                <strong>_top</strong>
-               - Opens link in the full body of the window
-            </p>
-			<p>
-                <strong><i>framename</i></strong>
-               - Opens link in specified named frame
-            </p> 
             <br />
-            <a href="#">More terms here</a>           
+            <a href="#">More terms here</a>
         </div>
 
 
-    </main>
+    </div>
 
     <footer>
         <p><span>&copy; 2018 EasyFunHTML</span></p><!--Using <small> makes the text small-->
